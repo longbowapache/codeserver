@@ -1,2 +1,2 @@
 FROM linuxserver/code-server
-RUN apt install python3 python3-pip
+RUN apt update && apt install python3 python3-pip
