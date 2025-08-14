@@ -25,7 +25,6 @@ RUN pip3 install --no-cache-dir --break-system-packages jupyterlab notebook
 # This allows you to open and run .ipynb files directly in the code-server UI.
 RUN /app/code-server/bin/code-server --install-extension ms-python.python && \
     /app/code-server/bin/code-server --install-extension ms-python.debugpy && \
-    /app/code-server/bin/code-server --install-extension ms-python.vscode-python-envs && \
     /app/code-server/bin/code-server --install-extension ms-toolsai.jupyter && \
     /app/code-server/bin/code-server --install-extension ms-toolsai.vscode-jupyter-cell-tags && \
     /app/code-server/bin/code-server --install-extension ms-toolsai.jupyter-keymap && \
@@ -33,8 +32,8 @@ RUN /app/code-server/bin/code-server --install-extension ms-python.python && \
     /app/code-server/bin/code-server --install-extension ms-toolsai.vscode-jupyter-slideshow && \
     /app/code-server/bin/code-server --install-extension vscodevim.vim && \
     /app/code-server/bin/code-server --install-extension ms-python.autopep8 && \
-    /app/code-server/bin/code-server --install-extension ms-toolsai.datawrangler && \
-    /app/code-server/bin/code-server --install-extension google.geminicodeassist && \
+    # /app/code-server/bin/code-server --install-extension ms-toolsai.datawrangler && \
+    # /app/code-server/bin/code-server --install-extension google.geminicodeassist && \
     /app/code-server/bin/code-server --install-extension mhutchie.git-graph && \
     /app/code-server/bin/code-server --install-extension golang.go
 
