@@ -19,7 +19,7 @@ RUN apt-get update && \
 
 # Use pip to install JupyterLab and the classic Notebook
 # Using --no-cache-dir prevents pip from storing a cache, saving space
-RUN pip3 install --no-cache-dir jupyterlab notebook
+RUN pip3 install --no-cache-dir --break-system-packages jupyterlab notebook
 
 # Pre-install the official Microsoft Python and Jupyter extensions for VS Code.
 # This allows you to open and run .ipynb files directly in the code-server UI.
