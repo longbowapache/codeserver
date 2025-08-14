@@ -23,8 +23,8 @@ RUN pip3 install --no-cache-dir --break-system-packages jupyterlab notebook
 
 # Pre-install the official Microsoft Python and Jupyter extensions for VS Code.
 # This allows you to open and run .ipynb files directly in the code-server UI.
-RUN code-server --install-extension ms-python.python && \
-    code-server --install-extension ms-toolsai.jupyter
+RUN /app/code-server/bin/code-server --install-extension ms-python.python && \
+    /app/code-server/bin/code-server --install-extension ms-toolsai.jupyter
 
 # Switch back to the default non-root user for security
 USER abc
