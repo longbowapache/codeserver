@@ -36,6 +36,3 @@ RUN /app/code-server/bin/code-server --install-extension ms-python.python && \
     # /app/code-server/bin/code-server --install-extension google.geminicodeassist && \
     /app/code-server/bin/code-server --install-extension mhutchie.git-graph && \
     /app/code-server/bin/code-server --install-extension golang.go
-
-# Switch back to the default non-root user for security
-USER abc
